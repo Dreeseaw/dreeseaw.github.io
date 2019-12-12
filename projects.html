@@ -20,67 +20,44 @@
 
   <!-- The Grid -->
   <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="/images/headshot.png" style="width:100%" alt="Avatar">
-        </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Machine Learning and Data Engineering</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Raleigh, NC</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>wdreese123@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+1 (919) 673-3603</p>
-          <hr>
-
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p style="text-align:left;">Python<span style="float:right;">Proficient</p>
-          <p style="text-align:left;">C/C++<span style="float:right;">Proficient</p>
-          <p style="text-align:left;">CUDA<span style="float:right;">Experienced</p>
-          <p style="text-align:left;">Bash Scripting<span style="float:right;">Experienced</p>
-          <p style="text-align:left;">HTML/CSS<span style="float:right;">Experienced</p>
-          <p style="text-align:left;">Matlab<span style="float:right;">Experienced</p>
-          <p style="text-align:left;">Java<span style="float:right;">Beginner</p>
-          <p style="text-align:left;">SQL<span style="float:right;">Beginner</p>
-          <hr>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Frameworks & Technologies</b></p>
-          <p style="text-align:left;">Tensorflow/Keras<span style="float:right;">Proficient</p>
-          <p style="text-align:left;">Pytorch<span style="float:right;">Experienced</p>
-          <p style="text-align:left;">Redis<span style="float:right;">Experienced</p>
-          <p style="text-align:left;">Git<span style="float:right;">Experienced</p>
-          <p style="text-align:left;">Flask<span style="float:right;">Experienced</p>
-          <p style="text-align:left;">Docker<span style="float:right;">Experienced</p>
-          <p style="text-align:left;">OpenMP & MPI<span style="float:right;">Experienced</p>
-          <p style="text-align:left;">Kubernetes<span style="float:right;">Beginner</p>
-          <br>
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
-    </div>
 
     <!-- Right Column -->
-    <div class="w3-twothird">
+    <div class="w3-container">
 			<div class="topnav">
 				<a href='index.html'>Intro</a>
 				<a href='projects.html'>Projects</a>
-				<a href='contact.html'>Contact Info</a>
+				<a href='contact.html'>Writing Samples</a>
 				<a href='reflection.html'>Reflection</a>
 				<a href='bio.html'>Biography</a>
 				<a href='resume.html'>Resume</a>
 			</div>
 			<div class="w3-container">
-				<h1>Welcome!</h1>
-				<h4>My name is William Dreese and I'm an aspiring Data Scientist or Data Engineer. I'm currently a senior in Penn State's Computer Science program.</h4>
-			</div>
+				<h1>Projects & Publications</h1>
+        <div class="w3-container">
+          <h2>Microstructure Analyzer App - <i>Flask, TensorFlow, Docker</i></h2>
+          <div class="w3-third" style="text-align: center">
+            <img src="images/microapp_trans.png" style="width:100%" alt="microapp pic">
+            <h5><i>The CAE model seperates the grain pixels (black) and background pixels (white) from a given greyscale image</i></h5>
+          </div> <div class="w3-twothird" style="text-align: center; padding: 10px 20px">
+            <h5>During my time as a Machine Learning Intern at Western Digital, I worked along our Material Analysis group to develop, train, and deploy a deep learning app into internal production. I consulted Dr. Shikra Jain about a potential use case for a computer vision model she could apply to her every day work. After selecting the Convolution Autoencoder model and the parameter set that efficiently gave the most accurate results, I created a website using Python & Flask that allowed other scientists in her group to analyze their own material images. Other features were included to gather all submitted data for further model training, let researchers upload and switch the current model in use, and a guide & Dockerfile to robustly serve the application.</h5>
+            <h5>When deployed, my system decreased the time spent to maunally seperate the grains from 60 minutes to nearly 60 seconds (~15 on systems with a GPU!). The site also performs the grain analysis (average size, average spacing, shape statistics) required for their analysis.</h5>
+          </div> <!-- end text container -->
+        </div> <!-- end proj container -->
+        <div class="w3-container" style="padding: 10px 0px">
+          <h2>ObjectDetection - <i>Matlab, OpenCV</i></h2>
+          <div class="w3-twothird" style="text-align: center; padding: 10px 20px">
+            <h5>As a part of my Computer Vision course at Penn State, I implemented four common object detection algorithms. Given an input video, the application would collectively run the algorithms and output a video file showing the results of using each method.</h5>
+          </div> <div class="w3-third" style="text-align:center">
+            <img src="images/obj_ex.jpg" alt="obj det out ex im" style="width:80%">
+            <h5><i>An example output frame</i></h5>
+          </div>
+        </div>
+      </div> <!-- end projects -->
     </div>
-    
+      
   <!-- End Grid -->
   </div>
-  
+    
   <!-- End Page Container -->
 </div>
 
